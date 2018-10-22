@@ -1,0 +1,122 @@
+body {
+    min-width: 770px;
+    min-height: 100%;
+}
+
+.header-div {
+    background-color: #24292e;
+    height: 60;
+}
+
+.nav-icon {
+    height: 40px;
+    padding: 2px;
+}
+
+.nav-search-div {
+    border-radius: .25rem;
+    margin: .25rem;
+    height:30px;
+    background-color: hsla(0,0%,100%,0.125);
+}
+
+.nav-search-div input::placeholder {
+    color: #929292;
+}
+
+.nav-search-div input:focus {
+    outline: none;
+}
+
+.dropdown-item:hover {
+    background-color: #2575d1;
+}
+
+.main-header-nav {
+    position: relative;
+    top:1px;
+}
+
+.main-header .btn {
+    border:1px solid rgba(27,31,35,0.2);
+    height: 30px;
+}
+
+.icon {
+    height:15px;
+    opacity: 0.7;
+}
+
+.nav-tabs .nav-link.active{
+    border-top: 3px solid orangered;
+    border-radius: 5px;
+}
+
+.main-header-nav .nav-tabs a .nav-link{
+    color: #495057
+}
+
+.footer {
+    position: sticky;
+}
+.footer .nav-icon{
+    opacity: 0.5;
+}
+
+.status-wrapper {
+    overflow: hidden;
+}
+
+.status-wrapper-div {
+    overflow: hidden;
+    height: 40px;
+}
+
+.status-wrapper .row {
+    height: 40px;
+}
+
+.color {
+    height: 8px;
+    cursor: pointer
+}
+
+.status-wrapper-switch {
+    position: relative;
+    top:-40;
+}
+
+#status-wrapper-switch a{
+    text-decoration: none
+}
+
+.main {
+    min-height: 55%;
+}
+
+.gitcontainer
+{
+    margin-left: 12%;
+    margin-right: 12%;
+}
+
+.folder-structure td {
+    padding: 7px;
+}
+
+#readme {
+    font-size: 15px;
+}
+
+#bootstrap-icon {
+    height: 72px;
+}
+
+.new-container {
+    margin-left: 12%;
+    margin-right: 12%;
+}
+
+.clone-dropdown {
+    width: 350px;
+}

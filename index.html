@@ -1,0 +1,375 @@
+
+<!DOCTYPE >
+<html>
+<title>/twbs/bootstrap</title>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+
+</head>
+
+<body>
+    <div class="text-light header-div">
+        <nav class="gitcontainer p-2 navbar navbar-expand-lg">
+            <a href="/notifications"><img src="assets/images/Octicons-mark-github.svg" class="nav-icon bg-white rounded-circle" /></a>
+            <div class=" nav-search-div">
+                <input type="search" placeholder="Search or jump to..." size="25" class="bg-transparent px-2 border-0">
+                <span><img src="assets/images/search-shortcut-hint.svg" class="p-2" /> </span>
+            </div>
+            <ul class="nav">
+                <li class="nav-item"><a class="px-2 nav-link text-light font-weight-bold" href="#" aria-label="Pull Requests">Pull Requests</a></li>
+                <li><a class="px-2 nav-link text-light font-weight-bold" href="#" aria-label="Issues">Issues</a></li>
+                <li class="nav-item"><a class="px-2 nav-link text-light font-weight-bold" href="#" aria-label="Market place">Marketplace</a></li>
+                <li class="nav-item"><a class="px-2 nav-link text-light font-weight-bold" href="#" aria-label="Explore">Explore</a></li>
+            </ul>
+
+            <div class="ml-auto nav">
+                <a class="nav-link" aria-label="No new message" href="#">
+                    <img src="assets/images/bell.svg " class=" m-1">
+                </a>
+                <div role="group" class="btn-group d-flex">
+                    <button type="button" class="btn btn-outline-secondary border-0  dropdown-toggle" data-toggle="dropdown">
+                        <img src="assets/images/plus.svg " class="m-1">
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="/new">New repository</a>
+                        <a class="dropdown-item" href="/new/import">Import repository</a>
+                        <a class="dropdown-item" href="https://gist.github.com/">New gist</a>
+                        <a class="dropdown-item" href="/organizations/new">New organization</a>
+
+                        <div class="dropdown-divider"></div>
+                        <h6 class="dropdown-header">This repository</h6>
+
+                        <a class="dropdown-item" href="/twbs/bootstrap/issues/new/choose">New issue</a>
+                    </div>
+                </div>
+                <div role="group" class="btn-group d-flex">
+                    <button type="button" class="btn btn-outline-secondary border-0 dropdown-toggle " data-toggle="dropdown">
+                        <a class="" href="#"><img src="assets/images/user.png" height="18" /></a>
+                    </button>
+                    <section class="dropdown-menu dropdown-menu-right">
+                        <h6 class="dropdown-header">Signed in as</h6>
+                        <h6 class="dropdown-item font-weight-bold">AlanDavisBabu</h6>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/AlanDavisBabu">Your profile</a>
+                        <a class="dropdown-item" href="">Your repositories</a>
+                        <a class="dropdown-item" href="/organizations/new">Your stars</a>
+                        <a class="dropdown-item" href="https://gist.github.com/">Your gists</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="https://help.github.com">Help</a>
+                        <a class="dropdown-item" href="/settings/profile">Settings</a>
+                        <a class="dropdown-item" href="https://github.com">Sign-out</a>
+                    </section>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+    <div class="main-header border-bottom pt-3">
+        <div class="gitcontainer">
+            <div class="d-flex justify-content-between">
+                <div class="">
+                    <ol class="breadcrumb p-0 bg-white">
+                        <img src="assets/images/repo.svg" class="m-1">
+                        <li class="breadcrumb-item"><a href="#">twbs</a></li>
+                        <li class="breadcrumb-item  font-weight-bold active" aria-current="page"><a href="#">bootstrap</a></li>
+                    </ol>
+                </div>
+                <div class="">
+                    <div class="btn-group">
+                        <div class="btn-group">
+                            <Button class="btn btn-light dropdown-toggle text-center" data-toggle="dropdown">
+                                <img src="assets/images/eye.svg" class="icon m-1">
+                                <span class="font-weight-bold small">Watch</span>
+                            </Button>
+                            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                <a class="dropdown-item">
+                                    <div><span class="d-block font-weight-bold">Not watching</span><span class="d-block">Be
+                                            notified when participating or @mentioned. </span> </div>
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <button class="dropdown-item">
+                                    <div><span class="d-block font-weight-bold">Watching</span><span class="d-block">Be
+                                            notified of all conversations. </span> </div>
+                                </button>
+                                <div class="dropdown-divider"></div>
+                                <button class="dropdown-item">
+                                    <div><span class="d-block font-weight-bold">Ignoring</span><span class="d-block">Never
+                                            be notified. </span> </div>
+                                </button>
+                            </div>
+                        </div>
+                        <Button class="btn btn-light"><span class="font-weight-bold small">7,404</span></Button>
+                    </div>
+                    <div class="btn-group">
+                        <Button class="btn btn-light font-weight-bold small"> <span class="font-weight-bold small"><img
+                                    src="assets/images/star.svg" class="icon m-1">Star</span></Button>
+                        <Button class="btn btn-light font-weight-bold small"><span class="font-weight-bold small">128,183</span></Button>
+                    </div>
+                    <div class="btn-group">
+                        <Button class="btn btn-light font-weight-bold small"><span class="font-weight-bold small"><img
+                                    src="assets/images/fork.svg" class="icon m-1">Fork</span></Button>
+                        <Button class="btn btn-light font-weight-bold small"><span class="font-weight-bold small">62,708</span></Button>
+                    </div>
+                </div>
+            </div>
+            <div class=" mt-2">
+                <ul class="nav nav-tabs main-header-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active " href="#"><img src="assets/images/code.svg" class="icon m-1"></span>Code</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#"><img src="assets/images/issue.svg" class="icon m-1">Issues</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#"><img src="assets/images/pull-request.svg" class="icon m-1">Pull
+                            Requests
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#"><img src="assets/images/project.svg" class="icon m-1">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#"><img src="assets/images/barchart.svg" class="icon m-1">Insights</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main pt-4 gitcontainer">
+        <div class="p-2">
+            <span class="mb-3">
+                The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects
+                on the web. <a href="http://getbootstrap.com">http://getbootstrap.com</a>
+            </span>
+        </div>
+        <div class="p-2">
+            <a class="m-2 small" href="#">css</a>
+            <a class="m-2 small" href="#">bootstrap</a>
+            <a class="m-2 small" href="#">javascript</a>
+            <a class="m-2 small" href="#">html</a>
+            <a class="m-2 small" href="#">jekyll-site</a>
+            <a class="m-2 small" href="#">scss</a>
+            <a class="m-2 small" href="#">css-framework</a>
+
+        </div>
+        <div class=" status-wrapper border rounded position-relative">
+            <div class="status-wrapper-div ">
+                <div id="status-wrapper-switch">
+                    <div class="row">
+                        <div class="col d-flex justify-content-center align-items-center"><img src="assets/images/history.svg"
+                                class="icon m-1"><a href="#" class="text-dark font-weight-bold p-1">17,984</a><a href="#"
+                                class="text-dark">commits</a></div>
+                        <div class="col d-flex justify-content-center align-items-center"><img src="assets/images/git-branch.svg"
+                                class="icon m-1"><a href="#" class="text-dark font-weight-bold p-1">31</a><a href="#"
+                                class="text-dark">branches</a></div>
+                        <div class="col d-flex justify-content-center align-items-center"><img src="assets/images/tag.svg"
+                                class="icon m-1"><a href="#" class="text-dark font-weight-bold p-1">49</a><a href="#"
+                                class="text-dark">releases</a></div>
+                        <div class="col d-flex justify-content-center align-items-center"><img src="assets/images/users.svg"
+                                class="icon m-1"><a href="#" class="text-dark font-weight-bold p-1">1,024</a><a href="#"
+                                class="text-dark">contributers</a></div>
+                        <div class="col d-flex justify-content-center align-items-center"><img src="assets/images/law.svg"
+                                class="icon m-1"><span></span><a href="#" class="text-dark">MIT</a></div>
+                    </div>
+                    <div class="row" id="status-language">
+                        <div class="col d-flex justify-content-center align-items-center"><span class="rounded-circle p-1 m-1"
+                                style="background-color:#563d7c;"></span><a href="#/search?l=css" class="text-dark">CSS</a><span
+                                class="p-1 font-weight-bold text-secondary">38.8%</span></div>
+                        <div class="col d-flex justify-content-center align-items-center"><span class="rounded-circle p-1 m-1 "
+                                style="background-color:#f1e05a;"></span><a href="/search?l=javascript" class="text-dark">JavaScript</a><span
+                                class="p-1 font-weight-bold text-secondary">36.8%</span></div>
+                        <div class="col d-flex justify-content-center align-items-center"><span class="rounded-circle p-1 m-1 "
+                                style="background-color:#e34c26;"></span><a href="/search?l=javascript" class="text-dark">HTML</a><span
+                                class="p-1 font-weight-bold text-secondary">23.9%</span></div>
+                        <div class="col d-flex justify-content-center align-items-center"><span class="rounded-circle p-1 m-1 "
+                                style="background-color:#ffffff;"></span><a href="/search?l=javascript" class="text-dark">Other</a><span
+                                class="p-1 font-weight-bold text-secondary">0.5%</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="color rounded-bottom bg-dark d-flex " id="status-color">
+                <div style="width:39.4%; height:100%; background-color:#563d7c"></div>
+                <div style='width:35.9%; height:100%; background-color:#f1e05a;'></div>
+                <div style='width:24.2%; height:100%; background-color:#e34c26'></div>
+                <div style='width:0.5%; height:100%; background-color:#ffffff'></div>
+            </div>
+        </div><div class="mt-3 mb-2 d-flex">
+            <div>
+                <button class="dropdown-toggle small font-weight-bold" data-toggle="dropdown"><i class="text-secondary">Branch:
+                    </i>v4-dev</button>
+                <div class="dropdown-menu">
+                    <span class="m-3 small"><strong>Switch branches/tags</strong></span>
+                    <div class="dropdown-divider"></div>
+                    <div class="p-2"><input type="text" class="form-control" id="search-branch-tag" onkeyup="filterFunction()"
+                            placeholder="Filter branches/tags"></div>
+                    <!-- <ul class="pl-1 nav nav-tabs border-bottom dropdown-search-tab">
+                        <li class="nav-item">
+                            <button class="nav-link active text-dark" onclick='changeactive("banches")'>Branches</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link text-secondary bg-white" onclick='changeactive("tags")'>Tags</button>
+                        </li>
+                    </ul> -->
+                    <div id="dropdown-content" class="search-dropdown dropdown-content show">
+                        <span href="#about" class="dropdown-item text-secondary">gh-pages</span>
+                        <span href="#base" class="dropdown-item text-secondary">flex-checks</span>
+                        <span href="#blog" class="dropdown-item text-secondary">input-group-tests</span>
+                        <span href="#contact" class="dropdown-item text-secondary">master</span>
+                        <span href="#custom" class="dropdown-item text-secondary">v4-dev</span>
+                        <span href="#support" class="dropdown-item text-secondary">validation-required</span>
+                        <!-- </div> -->
+                        <!-- <div id="tags" class="dropdown-content show"> -->
+                        <span href="#v4.1.3" class="dropdown-item text-secondary">v4.1.3</span>
+                        <span href="#v4.1.2" class="dropdown-item text-secondary">v4.1.2</span>
+                        <span href="#v4.1.1" class="dropdown-item text-secondary">v4.1.1</span>
+                        <span href="#v4.1.0" class="dropdown-item text-secondary">v4.1.0</span>
+                        <span href="#v4.0.0" class="dropdown-item text-secondary">v4.0.0</span>
+                    </div>
+                </div>
+                <button class="small font-weight-bold">New pull request</button>
+            </div>
+            <div class=" ml-auto p-0 ">
+                <div class="btn-group p-0">
+                    <button class="small font-weight-bold">Create new file</button>
+                    <button class="small font-weight-bold">Upload files</button>
+                    <button class="small font-weight-bold">Find files</button>
+                </div>
+                <div class="btn-group">
+                    <button class="small font-weight-bold dropdown-toggle" data-toggle="dropdown">Clone or Download</button>
+                    <div class="dropdown-menu dropdown-menu-right p-3 clone-dropdown">
+                        <div><span class="font-weight-bold pb-2">Clone with HTTPS<a href="#" class="small float-right">use
+                                    SSH
+                                </a></span></div>
+                        <div><span class="small pb-2">Use Git or checkout with SVN using the web URL.</span></div>
+                        <input class="mt-2 mb-2 w-100 text-secondary" value="https://github.com/twbs/bootstrap.git" />
+                        <div class="dropdown-divider"></div>
+                        <div class="d-flex justify-content-center"><a class="font-weighth-bold" href="#">Download ZIP</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-2 p-2 border rounded-top bg-light media">
+            <img src="assets/images/349621.jpeg" class="rounded" style="height:25px;" />
+            <div class="d-flex w-100">
+                <span class="small pl-2"><a class="font-weight-bold text-dark" href="#contributer1">@XhmikosR</a>
+                    Remove unneeded check (<a href="#commit-27133">...</a>)</span>
+                <div class="ml-auto text-secondary small">Latest commit 5 minutes ago</div>
+            </div>
+        </div>
+        <div class="border rounded-bottom">
+            <table class="table table-hover m-0">
+                <tbody>
+                    <tr>
+                        <td class=""><img src="assets/images/paper.svg" class="pl-3 pr-3 icon" /><a href="#/tree/v4-dev/js">js</a></td>
+                        <td class=""><a href="#commit-111" class="text-secondary">Last commit message for js</a></td>
+                        <td class="text-right"><span class="text-secondary">19 hours ago</span></td>
+                    </tr>
+                    <tr>
+                        <td class=""><img src="assets/images/paper.svg" class="pl-3 pr-3 icon" /><a href="#/tree/v4-dev/site">site</a></td>
+                        <td class=""><a href="#commit-121" class="text-secondary">Last commit message for site</a></td>
+                        <td class="text-right"><span class="text-secondary">1 hour ago</span></td>
+                    </tr>
+                    <tr>
+                        <td class=""><img src="assets/images/paper.svg" class="pl-3 pr-3 icon" /><a href="#/tree/v4-dev/scss">scss</a></td>
+                        <td class=""><a href="#commit-131" class="text-secondary">Last commit message for scss</a></td>
+                        <td class=" text-right"><span class="text-secondary">8 hours ago</span></td>
+                    </tr>
+                    <tr>
+                        <td class=""><img src="assets/images/paper.svg" class="pl-3 pr-3 icon" /><a href="#/tree/v4-dev/gitignore">.gitignore</a></td>
+                        <td class=""><a href="#commit-131" class="text-secondary">Last commit message for .gitignore</a></td>
+                        <td class=" text-right"><span class="text-secondary">19 hours ago</span></td>
+                    </tr>
+                    <tr>
+                        <td class=""><img src="assets/images/paper.svg" class="pl-3 pr-3 icon" /><a href="#/tree/v4-dev/readme">README.md</a></td>
+                        <td class=""><a href="#commit-121" class="text-secondary">Last commit message for readme.md</a></td>
+                        <td class="text-right"><span class="text-secondary">1 day ago</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="mt-2 p-2 border rounded-top bg-light d-flex align-items-center">
+            <img src="assets/images/readme.svg" />
+            <span class="font-weight-bold pl-1" id="readme">README.md</span>
+        </div>
+        <div class="border rounded-bottom p-5">
+
+            <img src="assets/images/bootstrap.svg" class="m-4 d-block mx-auto " id="bootstrap-icon" />
+            <p class=" h3 text-center"><strong>Bootstrap</strong></p>
+            <p class="text-center ">Sleek, intuitive, and powerful front-end framework for faster and easier web development.
+                <br /><a href="https://getbootstrap.com/docs/4.1/getting-started/introduction/" target="_blank"><strong>Explore
+                        Bootstrap docs >></strong></a>
+            </p>
+            <p class="text-center">
+                <a href="https://github.com/twbs/bootstrap/issues/new?template=bug.md" target="_blank">Report bug</a> .
+                <a href="https://github.com/twbs/bootstrap/issues/new?template=feature.md&labels=feature" target="_blank">Request
+                    feature
+                </a> .
+                <a href="https://themes.getbootstrap.com/" target="_blank">Themes</a> .
+                <a href="https://jobs.getbootstrap.com/" target="_blank">Jobs</a> .
+                <a href="https://blog.getbootstrap.com/" target="_blank">Blog</a>
+            </p>
+            <p class="h3 border-bottom p-2"><strong>Quick start</strong></p>
+            <p class="p-2">Several quick start options are available</p>
+            <ul>
+                <li class="p-1"><a href="https://github.com/twbs/bootstrap/archive/v4.1.3.zip">Download the latest release.</a></li>
+                <li class="p-1">Clone the repo: <code class="text-dark p-1 rounded">git clone https://github.com/twbs/bootstrap.git</code></li>
+                <li class="p-1">Install with <a href="https://www.npmjs.com/">npm</a>: <code class="text-dark p-1">npm install bootstrap</code></li>
+                <li class="p-1">Install with <a href="https://yarnpkg.com/">yarn</a>: <code class="text-dark p-1">yarn add bootstrap@4.1.3</code></li>
+                <li class="p-1">Install with <a href="https://getcomposer.org/">Composer</a>: <code class="text-dark p-1">composer require twbs/bootstrap:4.1.3</code></li>
+                <li class="p-1">Install with <a href="https://www.nuget.org/">NuGet</a>: CSS: <code class="text-dark p-1">Install-Package bootstrap</code>                    Sass:
+                    <code class="text-dark p-1">Install-Package bootstrap.sass</code></li>
+            </ul>
+            <p>Read the <a href="https://getbootstrap.com/docs/4.1/getting-started/introduction/" target="_blank">Getting
+                    started page</a> for information on the framework contents, templates and examples, and more.</p>
+
+            <p class="h3 border-bottom p-2"><strong>Whats included</strong></p>
+            <p class="p-2">Within the download you'll find the following directories and files, logically grouping common
+                assets and providing both compiled and minified variations. You'll see something like this:</p>
+            <code class="text-dark p-1 ">
+                    bootstrap/ <br />
+                    '--- dist/<br />
+                        |--- css/<br />
+                        |   |--- bootstrap-grid.css<br />
+                        |   |--- bootstrap-grid.css.map<br />
+                        |   |--- bootstrap-grid.min.css<br />
+                        |   |--- bootstrap-grid.min.css.map<br />
+                        |   |--- bootstrap-reboot.css<br />
+                        |   |--- bootstrap-reboot.css.map<br />
+                        |   |--- bootstrap-reboot.min.css<br />
+                        |   |--- bootstrap-reboot.min.css.map<br />
+                        |   |--- bootstrap.css<br />
+                        |   |--- bootstrap.css.map<br />
+                        |   |--- bootstrap.min.css<br />
+                        |   '--- bootstrap.min.css.map<br />
+                        |
+                        '--- js/<br />
+                            |--- bootstrap.bundle.js<br />
+                            |--- bootstrap.bundle.js.map<br />
+                            |--- bootstrap.bundle.min.js<br />
+                            |--- bootstrap.bundle.min.js.map<br />
+                            |--- bootstrap.js
+                            |--- bootstrap.js.map
+                            |--- bootstrap.min.js
+                            '--- bootstrap.min.js.map
+            </code>
+        </div>
+    </div>
+
+    </div>
+
+</body>
+
+
+</html>
